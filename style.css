@@ -32,6 +32,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  padding: 20px;
 }
 
 main .section-projects {
@@ -100,6 +101,10 @@ i {
   height: 50px;
   border-radius: 30px;
   margin: 10px;
+}
+
+.section-header {
+  padding-left: 30px;
 }
 
 .section-projects {
