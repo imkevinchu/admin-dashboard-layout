@@ -11,6 +11,5 @@ This is a solution to the [admin dashboard project on The Odin Project](https://
 ## Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
 - CSS Grid
+- Flexbox
