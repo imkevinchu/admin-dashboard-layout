@@ -13,3 +13,4 @@ This is a solution to the [admin dashboard project on The Odin Project](https://
 - Semantic HTML5 markup
 - CSS Grid
 - Flexbox
+- Font Awesome
