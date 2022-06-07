@@ -6,7 +6,7 @@ This is a solution to the [admin dashboard project on The Odin Project](https://
 
 ### Preview
 
-![](./screenshot.png)
+![](./screenshot.jpg)
 
 ## Built with
 
