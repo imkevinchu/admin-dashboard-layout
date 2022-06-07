@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 body {
+  font-family: "Roboto", sans-serif;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 320px repeat(3, 1fr);
+  grid-template-rows: 120px repeat(4, 1fr);
+  margin: 0;
 }
 
 nav {
   background-color: cornflowerblue;
   color: white;
+  padding: 20px;
   grid-column: 1 / 2;
   grid-row: 1 / 6;
 }
@@ -15,24 +20,121 @@ header {
   background-color: #f8fafc;
   grid-column: 2 / 5;
   grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 36px;
 }
 
 main {
-  background-color: #cbd5e1;
+  background-color: #e2e8f0;
   grid-column: 2 / 5;
   grid-row: 2 / 6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+main .section-projects {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+main .announcements {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+main .trending {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
   list-style-type: none;
+  font-size: larger;
   padding: 0;
   margin: 0;
 }
 
 li {
-  margin: 10px;
+  margin: 24px;
 }
 
 i {
   margin-right: 14px;
+}
+
+/* Dashboard heading */
+.sidebar li:first-of-type {
+  margin-bottom: 48px;
+  font-size: larger;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  background-color: #e2e8f0;
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 16px;
+  width: 600px;
+  height: 28px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-projects > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  border-left: 10px solid gold;
+  padding: 30px;
+  margin: 28px;
+  width: 300px;
+}
+
+.announcement-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 28px;
+  width: 260px;
+}
+
+.trending-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 28px;
+  width: 260px;
 }
